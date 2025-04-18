@@ -94,6 +94,6 @@ ICMR_PROSPECT_Assignment/
 	•	ICMR_PROSPECT_Presentation.pptx – 3-slide summary presentation
 
 ## Thank you for reviewing this assignment.
-## Please feel free to explore the code, data, and presentation shared in this ##repository. ￼
+## Please feel free to explore the code, data, and presentation shared in this repository. ￼
 
-##— Barnita Das}
+— Barnita Das'''
