@@ -1,72 +1,109 @@
-### ICMR PROSPECT Phase-1 Screening Assignment
+### ICMR PROSPECT Phase-1 Assignment
 
-### Submitted by: Barnita Das
+Submitted by:** Barnita Das  
+**Role Applied:** Project Research Scientist-I  
+**Project Title:** “An endoscopic ultrasound image-based Prediction and Risk Observation System for Chronic Pancreatitis Evaluation using Convolutional Neural Network Technique (PROSPECT)”
 
-This project is a part of the screening assignment for the post of Project Research Scientist-I at PGIMER Chandigarh, under the project titled:
+---
 
-“An endoscopic ultrasound image-based Prediction and Risk Observation System for chronic Pancreatitis Evaluation using Convolutional Neural Network Technique (PROSPECT)”
+## 📌 Objective
 
-### Objective
+To extract structured information from scanned handwritten medical prescriptions using Python, OCR (Tesseract), and rule-based logic to simulate a multimodal LLM.
 
-The goal is to extract useful and structured information from handwritten medical prescriptions, using Python and a simulated multimodal approach.
+---
 
-### Tools & Libraries Used
+## 🛠️ Tools and Libraries Used
 
-- Python 3
-- OpenCV
-- pytesseract (OCR)
-- pandas
-- Jupyter Notebook
+- **Python 3**
+- **Tesseract OCR** – Optical Character Recognition engine
+- **OpenCV** – Open Source Computer Vision Library
+- **pytesseract** – Python wrapper for Tesseract
+- **pandas** – Data structuring and CSV export
+- **json** – For saving structured data
+- **os** – File handling
 
-### Dataset
+---
 
-- Total files: 129 scanned prescription images (`.jpg`)
-- Source: Kaggle Handwritten Medical Prescription Dataset  
-  (URL: [Click here](https://www.kaggle.com/datasets/mehaksingal/illegible-medical-prescription-images-dataset))
+## 📂 Dataset
 
-### Approach / Pipeline
+- **Name**: Handwritten Medical Prescription Images Dataset  
+- **Source**: [Kaggle Dataset](https://www.kaggle.com/datasets/mehaksingal/illegible-medical-prescription-images-dataset)  
+- **Description**: 129 scanned handwritten prescriptions in `.jpg` format
 
-1. Read and preprocess each image (convert to grayscale, remove noise).
-2. Use Tesseract OCR to extract text from the image.
-3. Apply simple rules to identify fields like:
-   - Doctor Name
-   - Patient Name
-   - Age
-   - Date
-   - Medicines
-   - Dosage
-4. Save the final structured data into:
-   - `structured_output.json`
-   - `structured_data.csv`
+---
 
-This simulates how a multimodal LLM would extract structured information from an image + text input.
+## ⚙️ Approach / Pipeline
 
-### Results
+### Step-by-Step Workflow:
 
-- Total images processed: 129
-- Successfully extracted: 108
-- Skipped: 21 (due to poor image quality or no text detected)
+1. **Preprocessing**  
+   - Converted images to grayscale  
+   - Applied median blurring and thresholding to improve text visibility
 
-### Project Files
+2. **Text Extraction**  
+   - Used `pytesseract` to extract text from the images
+
+3. **Rule-Based Structuring**  
+   - Parsed OCR output line-by-line to extract:
+     - Doctor Name
+     - Patient Info
+     - Age
+     - Date
+     - Medicines
+     - Dosage
+     - Signature
+
+4. **Output**  
+   - Stored the structured results in:
+     - `structured_output.json`
+     - `structured_data.csv`
+
+---
+
+## 💡 Sample Output
+
+```json
+{
+  "filename": "63.jpg",
+  "Doctor": "Dr A. Kumar",
+  "Patient": "Rakesh",
+  "Age": "42",
+  "Date": "10-04-2025",
+  "Medicines": ["Paracetamol 500mg", "Cetrizine 10mg"],
+  "Dosage": ["1 tablet twice daily", "1 at night"],
+  "Signature": "Dr A. Kumar"
+}
+
+How to Run This Project:
+Installation
+pip install opencv-python pytesseract pandas
+
+Setup Tesseract (Mac)
+import pytesseract
+pytesseract.pytesseract.tesseract_cmd = "/opt/homebrew/bin/tesseract"
+
+Run the notebook
+jupyter notebook pipeline.ipynb
+
+Folder Structure
 
 ICMR_PROSPECT_Assignment/
-├── prescriptions/                  
+├── prescriptions/                  # input images
 ├── output/
 │   ├── json/
 │   │   └── structured_output.json
 │   └── structured_data.csv
-├── pipeline.ipynb                 
+├── pipeline.ipynb
 ├── ICMR_PROSPECT_Presentation.pptx
 ├── README.md
 
-### Deliverables
+Deliverables
+	•	✅ pipeline.ipynb – Jupyter Notebook with full code
+	•	✅ structured_output.json – Extracted structured data
+	•	✅ structured_data.csv – CSV version
+	•	✅ ICMR_PROSPECT_Presentation.pptx – 3-slide summary presentation
 
-- `pipeline.ipynb`: Code for the full pipeline
-- `structured_output.json`: JSON file with extracted info
-- `structured_data.csv`: CSV version of the output
-- `ICMR_PROSPECT_Presentation.pptx`: PowerPoint (3-slide summary)
-
-Thank you for the opportunity.  
-Feel free to review the code and files shared here.
+Thank you for reviewing this assignment.
+Please feel free to explore the code, data, and presentation shared in this repository.
 
 — Barnita Das
