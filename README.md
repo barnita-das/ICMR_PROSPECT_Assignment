@@ -1,18 +1,14 @@
-### ICMR PROSPECT Phase-1 Assignment
+#  ICMR PROSPECT Phase-1 Assignment
 
-Submitted by:** Barnita Das  
+**Submitted by:** Barnita Das  
 **Role Applied:** Project Research Scientist-I  
 **Project Title:** “An endoscopic ultrasound image-based Prediction and Risk Observation System for Chronic Pancreatitis Evaluation using Convolutional Neural Network Technique (PROSPECT)”
 
----
-
-## 📌 Objective
+##  Objective
 
 To extract structured information from scanned handwritten medical prescriptions using Python, OCR (Tesseract), and rule-based logic to simulate a multimodal LLM.
 
----
-
-## 🛠️ Tools and Libraries Used
+##  Tools and Libraries Used
 
 - **Python 3**
 - **Tesseract OCR** – Optical Character Recognition engine
@@ -22,17 +18,13 @@ To extract structured information from scanned handwritten medical prescriptions
 - **json** – For saving structured data
 - **os** – File handling
 
----
-
-## 📂 Dataset
+##  Dataset
 
 - **Name**: Handwritten Medical Prescription Images Dataset  
 - **Source**: [Kaggle Dataset](https://www.kaggle.com/datasets/mehaksingal/illegible-medical-prescription-images-dataset)  
 - **Description**: 129 scanned handwritten prescriptions in `.jpg` format
 
----
-
-## ⚙️ Approach / Pipeline
+##  Approach / Pipeline
 
 ### Step-by-Step Workflow:
 
@@ -58,9 +50,7 @@ To extract structured information from scanned handwritten medical prescriptions
      - `structured_output.json`
      - `structured_data.csv`
 
----
-
-## 💡 Sample Output
+##  Sample Output
 
 ```json
 {
@@ -74,7 +64,7 @@ To extract structured information from scanned handwritten medical prescriptions
   "Signature": "Dr A. Kumar"
 }
 
-How to Run This Project:
+'''How to Run This Project'''
 Installation
 pip install opencv-python pytesseract pandas
 
@@ -82,7 +72,8 @@ Setup Tesseract (Mac)
 import pytesseract
 pytesseract.pytesseract.tesseract_cmd = "/opt/homebrew/bin/tesseract"
 
-Run the notebook
+'''Run the notebook'''
+Installation
 jupyter notebook pipeline.ipynb
 
 Folder Structure
@@ -98,10 +89,10 @@ ICMR_PROSPECT_Assignment/
 ├── README.md
 
 Deliverables
-	•	✅ pipeline.ipynb – Jupyter Notebook with full code
-	•	✅ structured_output.json – Extracted structured data
-	•	✅ structured_data.csv – CSV version
-	•	✅ ICMR_PROSPECT_Presentation.pptx – 3-slide summary presentation
+	• pipeline.ipynb – Jupyter Notebook with full code
+	• structured_output.json – Extracted structured data
+	• structured_data.csv – CSV version
+	• ICMR_PROSPECT_Presentation.pptx – 3-slide summary presentation
 
 Thank you for reviewing this assignment.
 Please feel free to explore the code, data, and presentation shared in this repository.
