@@ -64,7 +64,7 @@ To extract structured information from scanned handwritten medical prescriptions
   "Signature": "Dr A. Kumar"
 }
 
-## How to Run This Project
+{## How to Run This Project
 ## Installation:
 pip install opencv-python pytesseract pandas
 
@@ -96,4 +96,4 @@ ICMR_PROSPECT_Assignment/
 ## Thank you for reviewing this assignment.
 ## Please feel free to explore the code, data, and presentation shared in this ##repository. ￼
 
-##— Barnita Das
+##— Barnita Das}
