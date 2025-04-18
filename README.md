@@ -64,16 +64,15 @@ To extract structured information from scanned handwritten medical prescriptions
   "Signature": "Dr A. Kumar"
 }
 
-'''How to Run This Project'''
-Installation
+How to Run This Project
+Installation:
 pip install opencv-python pytesseract pandas
 
-Setup Tesseract (Mac)
+Setup Tesseract (Mac):
 import pytesseract
 pytesseract.pytesseract.tesseract_cmd = "/opt/homebrew/bin/tesseract"
 
-'''Run the notebook'''
-Installation
+Run the Notebook:
 jupyter notebook pipeline.ipynb
 
 Folder Structure
@@ -89,12 +88,12 @@ ICMR_PROSPECT_Assignment/
 ├── README.md
 
 Deliverables
-	• pipeline.ipynb – Jupyter Notebook with full code
-	• structured_output.json – Extracted structured data
-	• structured_data.csv – CSV version
-	• ICMR_PROSPECT_Presentation.pptx – 3-slide summary presentation
+	•	pipeline.ipynb – Jupyter Notebook with full code
+	•	structured_output.json – Extracted structured data
+	•	structured_data.csv – CSV version
+	•	ICMR_PROSPECT_Presentation.pptx – 3-slide summary presentation
 
 Thank you for reviewing this assignment.
-Please feel free to explore the code, data, and presentation shared in this repository.
+Please feel free to explore the code, data, and presentation shared in this repository. ￼
 
 — Barnita Das
