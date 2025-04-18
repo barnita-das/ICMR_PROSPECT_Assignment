@@ -50,7 +50,7 @@ To extract structured information from scanned handwritten medical prescriptions
      - `structured_output.json`
      - `structured_data.csv`
 
-##  Sample Output
+## Sample Output
 
 ```json
 {
@@ -65,14 +65,18 @@ To extract structured information from scanned handwritten medical prescriptions
 }
 
 How to Run This Project
-```markdown
+
 ### Installation:
-```bash
+
 pip install opencv-python pytesseract pandas
+
 Setup Tesseract (Mac):
+
 import pytesseract
 pytesseract.pytesseract.tesseract_cmd = "/opt/homebrew/bin/tesseract"
+
 Run the Notebook:
+
 jupyter notebook pipeline.ipynb
 
 ## Folder Structure
