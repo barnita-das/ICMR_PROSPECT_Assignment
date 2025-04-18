@@ -64,15 +64,15 @@ To extract structured information from scanned handwritten medical prescriptions
   "Signature": "Dr A. Kumar"
 }
 
-{## How to Run This Project
-## Installation:
+How to Run This Project
+```markdown
+### Installation:
+```bash
 pip install opencv-python pytesseract pandas
-
-## Setup Tesseract (Mac):
+Setup Tesseract (Mac):
 import pytesseract
 pytesseract.pytesseract.tesseract_cmd = "/opt/homebrew/bin/tesseract"
-
-## Run the Notebook:
+Run the Notebook:
 jupyter notebook pipeline.ipynb
 
 ## Folder Structure
@@ -96,4 +96,4 @@ ICMR_PROSPECT_Assignment/
 ## Thank you for reviewing this assignment.
 ## Please feel free to explore the code, data, and presentation shared in this repository. ￼
 
-— Barnita Das'''
+— Barnita Das
